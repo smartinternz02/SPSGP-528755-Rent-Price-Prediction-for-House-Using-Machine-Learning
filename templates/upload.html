@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rent Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='upload.css') }}">
+
+</head>
+<body>
+    <h1>Upload House Details</h1>
+    <table>
+        <form action="/upload" method="post">
+            <tr>
+                <td>City:</td>
+                <td><input type="text" name="city" placeholder="Name of the City" required></td>
+            </tr>
+            <tr>
+                <td>BHKs:</td>
+                <td><input type="number" name="BHKS" placeholder="BHKs" required></td>
+            </tr>
+            <tr>
+                <td>Baths:</td>
+                <td><input type="text" name="Baths" placeholder="Baths" required></td>
+            </tr>
+            <tr>
+                <td>Sqft per inch:</td>
+                <td><input type="number" name="sqft_per_inch" placeholder="Sqft per inch" required></td>
+            </tr>
+            <tr>
+                <td>Build up area:</td>
+                <td><input type="text" name="build_up_area" placeholder="Build Up Area" required></td>
+            </tr>
+            <tr>
+                <td>Type of property:</td>
+                <td><input type="text" name="Type_of_property" placeholder="Type of property" required></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><input type="text" name="location_of_the_property" placeholder="Location of the property" required></td>
+            </tr>
+            <tr>
+                <td>Deposit:</td>
+                <td><input type="number" name="deposit" placeholder="Deposit" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
